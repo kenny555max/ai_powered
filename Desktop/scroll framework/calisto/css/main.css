@@ -1,0 +1,303 @@
+.sectioned .contained {
+  background-color: lightgrey;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.sectioned .contained .wrapper {
+  background-color: floralwhite;
+  position: relative;
+}
+.sectioned .contained .wrapper header {
+  display: flex;
+}
+.sectioned .contained .wrapper header ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 9999999999;
+  position: absolute;
+}
+.sectioned .contained .wrapper header ul li {
+  padding: 10px 0;
+}
+.sectioned .contained .wrapper header ul li a {
+  color: floralwhite;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  font-size: 20px;
+}
+.sectioned .contained .wrapper header .toggle {
+  display: block;
+  right: 20px;
+  top: 20px;
+  display: none;
+  z-index: 99999999999;
+  font-size: 30px;
+  position: absolute;
+  color: grey;
+  background-color: black;
+  padding: 5px 5px;
+}
+.sectioned .contained .wrapper .banner-img {
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectioned .contained .wrapper .banner-img h1 {
+  color: floralwhite;
+  position: absolute;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+}
+.sectioned .contained .content-sec {
+  padding: 0 60px;
+}
+.sectioned .contained .content-sec .container {
+  padding: 100px 0;
+  font-family: "Times New Roman", Times, serif;
+}
+.sectioned .contained .content-sec .container hr {
+  margin: 50px 0;
+  background-color: lightgrey;
+  height: 1px;
+  width: 100%;
+}
+.sectioned .contained .content-sec .container .top {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sectioned .contained .content-sec .container .top h2 {
+  width: 400px;
+}
+.sectioned .contained .content-sec .container .top p {
+  width: 400px;
+  margin-bottom: 50px;
+}
+.sectioned .contained .content-sec .container .top a {
+  width: 400px;
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+.sectioned .contained .content-sec .container .middle h4 {
+  margin-bottom: 50px;
+}
+.sectioned .contained .content-sec .container .middle .img-sec {
+  margin-bottom: 70px;
+}
+.sectioned .contained .content-sec .container .middle .img-sec .img-box .set-bg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+.sectioned .contained .content-sec .container .middle .img-sec .img-box p {
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.sectioned .contained .content-sec .container .middle .img-sec .img-box .price {
+  color: orange;
+}
+.sectioned .contained .content-sec .container .middle a {
+  border: 2px solid black;
+  padding: 10px 10px;
+  color: black;
+  text-decoration: none;
+}
+.sectioned .contained .content-sec .container .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.sectioned .contained .content-sec .container .bottom form input {
+  padding: 5px 20px;
+  width: 400px;
+}
+.sectioned .contained .content-sec .container .bottom form button {
+  background-color: transparent;
+  padding: 5px 20px;
+}
+.sectioned .contained .footer {
+  background-color: grey;
+  padding: 50px 50px;
+  font-family: "Times New Roman", Times, serif;
+  color: floralwhite;
+}
+.sectioned .contained .footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+.sectioned .contained .footer .row h5 {
+  font-size: 15px;
+}
+.sectioned .contained .footer .row ul {
+  padding: 0 0;
+  list-style: none;
+}
+.sectioned .contained .footer .row ul li {
+  padding: 10px 0;
+}
+.sectioned .contained .footer .row ul li a {
+  color: floralwhite;
+  font-size: 10px;
+  text-decoration: none;
+  display: block;
+}
+.sectioned .contained .footer .row .right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.sectioned .contained .footer .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.sectioned .contained .footer .bottom .logo {
+  background-color: floralwhite;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+section {
+  background-color: lightgrey;
+  height: 100vh;
+  padding-top: 100px;
+}
+section .story {
+  background-color: floralwhite;
+  display: flex !important;
+  flex-direction: row !important;
+}
+section .story .story-img {
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+section .story .text-sec {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sectioned .contained .wrapper header .nav {
+    position: absolute;
+    background-color: floralwhite;
+    display: none;
+  }
+  .sectioned .contained .wrapper header .nav li a {
+    width: 100%;
+    color: black;
+  }
+  .sectioned .contained .wrapper header .nav li a:hover {
+    color: floralwhite;
+    background-color: black;
+  }
+  .sectioned .contained .wrapper header .nav .active {
+    margin-top: 40px;
+  }
+  .sectioned .contained .wrapper header .toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .sectioned .contained .wrapper .content-sec .container .bottom form input {
+    width: 400px;
+  }
+}
+section .wrapping .story {
+  display: flex;
+  flex-direction: column;
+}
+section .wrapping .story .text-sec {
+  text-align: center;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .sectioned .contained {
+    padding: 0 0 !important;
+  }
+  .sectioned .contained .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    max-width: 100% !important;
+  }
+  .sectioned .contained .container .wrapper .banner-img h1 {
+    font-size: 2.3em;
+  }
+  .sectioned .contained .container .wrapper .content-sec {
+    padding: 0 40px !important;
+  }
+  .sectioned .contained .container .wrapper .content-sec .container .top h2 {
+    width: 280px;
+    font-size: 1.5em;
+  }
+  .sectioned .contained .container .wrapper .content-sec .container .top p {
+    font-size: 0.7em;
+    width: 280px;
+  }
+  .sectioned .contained .container .wrapper .content-sec .container .top a {
+    width: 280px;
+  }
+  .sectioned .contained .container .wrapper .content-sec .container .bottom form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sectioned .contained .container .wrapper .content-sec .container .bottom form input {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  .sectioned .contained .container .wrapper .content-sec .container .bottom form button {
+    width: 100px;
+  }
+  .sectioned .contained .container .wrapper .footer .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .sectioned .contained .container .wrapper .footer .bottom .text p {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content-sec .container .bottom h6 {
+    font-size: 0.8em !important;
+  }
+  .content-sec .container .bottom form input {
+    width: 250px !important;
+  }
+
+  .footer {
+    padding: 20px 20px !important;
+  }
+}
+@media screen and (max-width: 280px) {
+  .content-sec .container .top p {
+    width: 240px !important;
+  }
+  .content-sec .container .top a {
+    width: 240px !important;
+  }
+  .content-sec .container .bottom h6 {
+    font-size: 0.7em !important;
+  }
+}

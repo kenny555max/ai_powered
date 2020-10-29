@@ -1,0 +1,304 @@
+
+.sectioned
+    .contained
+        background-color: lightgrey
+        padding-top: 100px
+        padding-bottom: 100px
+        .wrapper
+            background-color: floralwhite
+            position: relative
+            header
+                display: flex
+                ul
+                    display: flex
+                    justify-content: center
+                    width: 100%
+                    z-index: 9999999999
+                    position: absolute
+                    li
+                        padding: 10px 0
+                        a
+                            color: floralwhite
+                            text-decoration: none
+                            font-weight: bolder
+                            font-family: 'Times New Roman', Times, serif
+                            display: block
+                            font-size: 20px
+
+                .toggle
+                    display: block
+                    right: 20px
+                    top: 20px
+                    display: none
+                    z-index: 99999999999
+                    font-size: 30px
+                    position: absolute
+                    color: grey
+                    background-color: black
+                    padding: 5px 5px
+
+
+            .banner-img
+                overflow: hidden
+                background: 
+                    position: center center
+                    size: cover
+                    repeat: no-repeat
+                height: 500px
+                width: 100%
+                position: relative
+                display: flex
+                justify-content: center
+                align-items: center
+
+                h1
+                    color: floralwhite
+                    position: absolute
+                    font-family: 'Times New Roman', Times, serif
+                    font-size: 3em
+
+
+        .content-sec
+            padding: 0 60px
+            .container
+                padding: 100px 0
+                font-family: 'Times New Roman', Times, serif
+
+                hr
+                    margin: 50px 0
+                    background-color: lightgrey
+                    height: 1px
+                    width: 100%
+                .top
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    h2
+                        width: 400px
+
+                    p
+                        width: 400px
+                        margin-bottom: 50px
+
+                    a
+                        width: 400px
+                        color: black
+                        text-decoration: none
+                        font-size: 15px
+
+                .middle
+                    h4
+                        margin-bottom: 50px
+                    .img-sec
+                        margin-bottom: 70px
+                        .img-box
+                            .set-bg
+                                background: 
+                                    position: center center
+                                    size: cover
+                                    repeat: no-repeat
+                                height: 400px
+                                width: 100%
+
+                            p
+                                margin-top: 20px
+                                font-family: 'Times New Roman', Times, serif
+                                font-size: 20px
+                                margin-bottom: 0
+
+                            .price
+                                color: orange
+
+                    a
+                        border: 2px solid black
+                        padding: 10px 10px
+                        color: black
+                        text-decoration: none
+
+                .bottom
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    padding-top: 20px
+                    form
+                        input
+                            padding: 5px 20px
+                            width: 400px
+                        button
+                            background-color: transparent
+                            padding: 5px 20px
+
+        .footer
+            background-color: grey
+            padding: 50px 50px
+            font-family: 'Times New Roman', Times, serif
+            color: floralwhite
+            .row
+                display: flex
+                justify-content: space-between
+
+                h5
+                    font-size: 15px
+
+                ul
+                    padding:  0 0
+                    list-style: none
+                    li
+                        padding: 10px 0
+                        a
+                            color: floralwhite
+                            font-size: 10px
+                            text-decoration: none
+                            display: block
+
+                .right
+                    display: grid
+                    grid-template-columns: repeat(2, 1fr)
+
+            .bottom
+                display: flex
+                justify-content: space-between
+                .logo
+                    background-color: floralwhite
+                    height: 30px
+                    width: 30px
+                    border-radius: 50%
+
+section
+    background-color: lightgrey
+    height: 100vh
+    padding-top: 100px
+    .story
+        background-color: floralwhite
+        display: flex !important
+        flex-direction: row !important
+        .story-img
+            height: 400px
+            width: 100%
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: cover
+
+        .text-sec
+            display: flex
+            align-items: center
+            flex-direction: column
+            justify-content: center
+
+
+
+@media screen and ( max-width: 768px)
+    .sectioned
+        .contained
+            .wrapper
+                header
+                    .nav
+                        position: absolute
+                        background-color: floralwhite
+                        display: none
+                        li
+                            a
+                                width: 100%
+                                color: black
+                                &:hover
+                                    color: floralwhite
+                                    background-color: black
+
+                        .active
+                            margin-top: 40px
+                    .toggle
+                        display: block
+                        cursor: pointer
+
+                .content-sec
+                    .container
+                        .bottom
+                            form
+                                input
+                                    width: 400px
+
+section
+    .wrapping
+        .story
+            display: flex
+            flex-direction: column
+
+            .text-sec
+                text-align: center
+                padding: 0 20px
+
+@media screen and ( max-width: 767px)
+    .sectioned
+        .contained
+            padding: 0 0 !important
+            .container
+                padding-right: 0 !important
+                padding-left: 0 !important
+                max-width: 100% !important
+                .wrapper
+                    .banner-img
+                        h1
+                            font-size: 2.3em
+
+                    .content-sec
+                        padding: 0 40px !important
+                        .container
+                            .top
+                                h2
+                                    width: 280px
+                                    font-size: 1.5em
+                                p
+                                    font-size: .7em
+                                    width: 280px
+                                a
+                                    width: 280px
+                            .bottom
+                                form
+                                    display: flex
+                                    flex-direction: column
+                                    justify-content: center
+                                    align-items: center
+                                    input
+                                        margin-bottom: 20px
+                                        width: 300px
+                                    button
+                                        width: 100px
+
+                    
+                    .footer
+                        .row
+                            flex-direction: column-reverse
+                            text-align: center
+
+                        .bottom
+                            .text
+                                p
+                                    font-size: .7em
+
+
+@media screen and ( max-width: 320px)
+    .content-sec
+        .container
+            .bottom
+                h6
+                    font-size: .8em !important
+                form
+                    input
+                        width: 250px !important
+
+    .footer
+        padding: 20px 20px !important
+
+@media screen and ( max-width: 280px  )
+    .content-sec
+        .container
+            .top
+                p
+                    width: 240px !important
+                a
+                    width: 240px !important
+            .bottom
+                h6
+                    font-size: .7em !important
