@@ -1,10 +1,10 @@
 import UserModel from "'@/models/user";
 import { connectToDB } from "'@/utils/db";
-import { NextApiRequest } from "next";
+import { NextRequest } from "next/server";
 
 connectToDB();
 
-export async function GET(req: NextApiRequest) {
+export async function GET(req: NextRequest) {
     try {
         const users = await UserModel.find();
 
