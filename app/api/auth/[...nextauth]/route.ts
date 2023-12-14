@@ -3,30 +3,19 @@ import { connectToDB } from "'@/utils/db";
 import NextAuth from "next-auth";
 import GoogleProvider from 'next-auth/providers/google';
 
+import { GoogleProfile } from 'next-auth/providers/google';
+import { SignInCallback } from 'next-auth/internals';
+
+interface SignInCallbackParams {
+  profile: GoogleProfile;
+}
+
 const googleClientId = process.env.GOOGLE_CLIENT_ID;
 const googleClientSecret = process.env.GOOGLE_CLIENT_SECRET;
 
 if (!googleClientId || !googleClientSecret) {
     console.log('fucked up here');
   throw new Error("Google client ID or client secret is not defined");
-}
-
-interface GoogleProfile extends Record<string, any> {
-  aud: string
-  azp: string
-  email: string
-  email_verified: boolean
-  exp: number
-  family_name: string
-  given_name: string
-  hd: string
-  iat: number
-  iss: string
-  jti: string
-  name: string
-  nbf: number
-  picture: string
-  sub: string
 }
 
 const handler = NextAuth({
@@ -37,7 +26,7 @@ const handler = NextAuth({
         })
     ],
     callbacks: {
-        async signIn({ profile }: { profile: GoogleProfile }) {
+        async signIn({ profile }: SignInCallbackParams): Promise<boolean | undefined> {
             try {
                 await connectToDB();
 
