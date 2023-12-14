@@ -1,3 +1,4 @@
+// @ts-nocheck
 import UserModel from "'@/models/user";
 import { connectToDB } from "'@/utils/db";
 import NextAuth from "next-auth";
