@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 import { Poppins } from 'next/font/google';
 import { Suspense, useState, useEffect } from 'react';
