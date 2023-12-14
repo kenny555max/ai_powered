@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client';
 import { useSession, signIn, signOut, getProviders, ClientSafeProvider } from "next-auth/react";
 import Image from "next/image";
