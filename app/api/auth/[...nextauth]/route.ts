@@ -3,13 +3,6 @@ import { connectToDB } from "'@/utils/db";
 import NextAuth from "next-auth";
 import GoogleProvider from 'next-auth/providers/google';
 
-import { GoogleProfile } from 'next-auth/providers/google';
-import { SignInCallback } from 'next-auth/internals';
-
-interface SignInCallbackParams {
-  profile: GoogleProfile;
-}
-
 const googleClientId = process.env.GOOGLE_CLIENT_ID;
 const googleClientSecret = process.env.GOOGLE_CLIENT_SECRET;
 
