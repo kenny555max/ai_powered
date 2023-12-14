@@ -26,7 +26,7 @@ const handler = NextAuth({
         })
     ],
     callbacks: {
-        async signIn({ profile }: SignInCallbackParams): Promise<boolean | undefined> {
+        async signIn({ profile }): Promise<any> {
             try {
                 await connectToDB();
 
@@ -60,16 +60,7 @@ const handler = NextAuth({
                 return false;
             }
         },
-        async session({ session }: {
-            session: {
-                user: {
-                    name: string | null | undefined,
-                    image: string | null | undefined,
-                    email: string | null | undefined,
-                    id: string | null | undefined
-                }
-            }
-        }) {
+        async session({ session }): Promise<any> {
             try {
                 if (!session.user) {
                     console.error('Session: User data is missing');
