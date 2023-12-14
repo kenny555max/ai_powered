@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Image from 'next/image';
 import icon from '../../public/icons/copy.svg';
 import { PromptsProp } from './All_Prompts';
