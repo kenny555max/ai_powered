@@ -3,9 +3,9 @@
 import { Poppins } from 'next/font/google';
 import { Suspense, useState, useEffect } from 'react';
 import { useSession } from 'next-auth/react';
-import All_Prompts from '../../components/All_Prompts';
 const poppins = Poppins({ subsets: ['latin'], weight: ['900'] });
 import { useParams } from 'next/navigation';
+import Prompts from '\'@/app/components/Prompts';
 
 const Profile = () => {
     const { data: session } = useSession();
@@ -41,7 +41,10 @@ const Profile = () => {
                 prompts.length === 0
                     ? <div>You have not created any post yet...</div>
                     : <Suspense fallback={<div>Loading your prompts.....</div>}>
-                        <All_Prompts prompts={prompts} />
+                        {/**
+                            <All_Prompts prompts={prompts} />
+                        */}
+                        <Prompts />
                     </Suspense>
             }
         </div>

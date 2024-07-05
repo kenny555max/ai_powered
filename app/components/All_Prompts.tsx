@@ -10,7 +10,6 @@ export type PromptsProp = {
 }
 
 const All_Prompts = ({ prompts, tagSearch }: { prompts: PromptsProp[], tagSearch: (search: string) => void }) => {
-
     return (
         <div className='all_prompts grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-20 gap-4'>
             {prompts.map((prompt, index) => {
