@@ -35,7 +35,7 @@ const Prompt = ({ prompt, tagSearch }: { prompt: PromptsProp, key: number, tagSe
                 <p>{post.length > 200 ? post.slice(0, 200) + '...' : post}</p>
             </div>
             <div className="prompt_tags flex mt-6 gap-x-2 flex-wrap">
-                {tags.map((tag: string) => {
+                {tags?.map((tag: string) => {
                     return <button type='button' onClick={() => tagSearch(tag)} className='text-[blue]' key={tag}>#{tag}</button>
                 })}
             </div>
